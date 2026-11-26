@@ -1,3 +1,9 @@
+/**
+ * fun-toaster-error — a toaster error entry for make.fun eager-stork.
+ *
+ * Writes a playful "TOASTER ERROR 0xTOAST" message to entry.txt in the
+ * make.fun output directory (MAKEFUN_OUTPUT_DIR, or /output by default).
+ */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output'; mkdirSync(out, { recursive: true });
